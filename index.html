@@ -27,13 +27,31 @@
       <h1 class="visually-hidden">Дизайн-студия «Nerds»</h1>
 
       <section class="main-info">
-        <b>Долго, дорого, скрурпулезно.</b>
+        <h2 class="visually-hidden">Информация о нас</h2>
+        <div class="main-info-item">
+          <b>Долго, дорого, скрурпулезно.</b>
+          <p>
+            Математически выверенный дизайн
+            для вашего сайта или мобильного приложения.
+          </p>
+          <a class="button button-more" href="#">Узнать больше</a>
+      </div>
+      <div class="main-info-item">
+        <b>Любим математику, как никто другой</b>
         <p>
-          Математически выверенный дизайн
-          для вашего сайта или мобильного приложения.
+          Никакого креатива, только математические формулы
+          для расчета идеальных пропорций.
         </p>
         <a class="button button-more" href="#">Узнать больше</a>
-        <!-- Слайды -->
+    </div>
+    <div class="main-info-item">
+      <b>Только ночь, только хардкор</b>
+      <p>
+        Работать днем, как все? Мы против этого.
+        Ближе к полуночи работа только начинается.
+      </p>
+      <a class="button button-more" href="#">Узнать больше</a>
+  </div>
       </section>
 
       <section class="services">
@@ -74,32 +92,29 @@
             Исповедуем принципы минимализма и чистоты. Ставим математический расчет
             превыше креатива. Работаем не покладая рук, как роботы.
           </p>
-          <img src="img/about-us-image" width="" height="" alt="О нас">
-        </div>
-
-        <div class="about-us-features">
-          <b class="about-us-features-caption1">Выполняем заказы на разработку:</b>
+          <b class="about-us-features-caption">Выполняем заказы на разработку:</b>
           <ul class="about-us-features-text1">
             <li class="about-us-features-text1-item">Веб-сайтов любой сложности</li>
             <li class="about-us-features-text1-item">Мобильных приложений для IOS и Android</li>
             <li class="about-us-features-text1-item">Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
+        </div>
 
+        <div class="about-us-features">
+          <img src="img/about-us-features-image" width="" height="" alt="О нас">
           <b class="about-us-features-caption2">С 2004 года любим точность во всем:</b>
-          <ul class="about-us-features-text2">
-            <li class="about-us-features-text2-item">
-              <b class="about-us-features-text2-item-percents">146%</b>
-              <p>Уровень самоотдачи</p>
-            </li>
-            <li class="about-us-features-text2-item">
-              <b class="about-us-features-text2-item-percents">100%</b>
-              <p>Соблюдения строков</p>
-            </li>
-            <li class="about-us-features-text2-item">
-              <b class="about-us-features-text2-item-percents">50%</b>
-              <p>Минимальная предоплата</p>
-            </li>
-          </ul>
+          <table class="about-us-features-table">
+            <th class="about-us-features-table-row">
+              <td class="about-us-features-table-item">146<span class="percents">%</span></td>
+              <td class="about-us-features-table-item">100<span class="percents">%</span></td>
+              <td class="about-us-features-table-item">50<span class="percents">%</span></td>
+            </th>
+            <th class="about-us-features-table-row">
+              <td class="about-us-features-table-item">Уровень самоотдачи</td>
+              <td class="about-us-features-table-item">Соблюдение сроков</td>
+              <td class="about-us-features-table-item">Минимальная предоплата</td>
+            </th>
+          </table>
         </div>
       </section>
 
@@ -124,8 +139,19 @@
 
     <footer class="main-footer">
 
-      <section class="map">
-        <!--Карта-->
+      <section class="footer-map">
+        <section class="footer-contacts">
+          <h2>Nёrds design studio</h2>
+          <p>
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8
+          </p>
+          <p>
+            тел. +7(812)275-75-75
+          </p>
+          <a class="button contacts-button" href="#">Напишите нам</a>
+        </section>
+
       </section>
 
       <section class="footer-social">
@@ -158,16 +184,16 @@
       <form class="modal-contacts-form" method="post">
         <div class="modal-contacts-form-info">
           <div>
-            <p>Ваше Имя</p>
+            <label>Ваше Имя</label>
             <input class="input-area-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
           </div>
           <div>
-            <p>Ваше Имя</p>
+            <label>Ваше Имя</label>
             <input class="input-area-mail" type="text" name="mail" placeholder="Для отправки ответа">
           </div>
         </div>
         <div class="modal-contacts-form-letter">
-          <p>Текст письма:</p>
+          <label>Текст письма:</label>
           <input class="input-area-letter" type="text" name="letter" placeholder="В свободной форме">
         </div>
       </form>
