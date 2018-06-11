@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог дизайн студии Нёрдс</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-navigation-header-logo" href="index.html">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Дизайн-студии «Nerds»">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="studio.html">Студия</a></li>
+          <li><a href="customers.html">Клиенты</a></li>
+          <li class="site-navigation-selected"><a href="catalog.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="basker.html">Корзина</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main class="container">
+      <h1>Магазин готовых Шаблонов</h1>
+      <section class="filter">
+        <h2 class="visually-hidden">Фильтр поиска</h2>
+        <form class="filter-form" method="get" oninput="price-range-min.value=price-range.value">
+          <fieldset class="filter-form-price">
+            <legend>Стоимость:</legend>
+            <input class="filter-form-price-input" type="range" name="price-range" min="0" max="15000">
+            <div>
+              от
+              <output name="price-range-min">0</output>
+              до
+              <output name="price-range-max">15000</output>
+            </div>
+          </fieldset>
+          <fieldset class="filter-grid">
+            <legend>Сетка:</legend>
+            <input type="radio" name="filter-grid-radio" id="filter-grid-radio-adaptive">
+            <label for="filter-grid-radio-adaptive">Адаптивная</label>
+            <input type="radio" name="filter-grid-radio" id="filter-grid-radio-fixed">
+            <label for="filter-grid-radio-fixed">Фиксированная Резиновая</label>
+          </fieldset>
+          <fieldset class="filter-features">
+            <legend>Особенности:</legend>
+            <input type="checkbox" name="filter-checkbox-slider" id="filter-checkbox-slider">
+            <label for="filter-checkbox-slider">Слайдер</label>
+            <input type="checkbox" name="filter-checkbox-block" id="filter-checkbox-block">
+            <label for="filter-checkbox-block">Блок Преимуществ</label>
+            <input type="checkbox" name="filter-checkbox-news" id="filter-checkbox-news">
+            <label for="filter-checkbox-news">Новости</label>
+            <input type="checkbox" name="filter-checkbox-galery" id="filter-checkbox-galery">
+            <label for="filter-checkbox-galery">Галерея</label>
+            <input type="checkbox" name="filter-checkbox-basket" id="filter-checkbox-basket">
+            <label for="filter-checkbox-basker">Корзина</label>
+          </fieldset>
+          <input type="submit" value="Показать">
+        </form>
+      </section>
+
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог товаров</h2>
+        <div class="catalog-sort">
+          <p>
+            Сортировать:
+            <ul class="catalog-sort-list">
+              <li class="catalog-sort-list-item selected"><a href="#">По цене</a></li>
+              <li class="catalog-sort-list-item"><a href="#">По типу<a></li>
+              <li class="catalog-sort-list-item"><a href="#">По названию</a></li>
+            </ul>
+          </p>
+        </div>
+        <div class="catalog-product">
+          <ul class="catalog-product-list">
+            <li class="catalog-product-list-item">
+              <h3 class="visually-hidden">Седона</h3>
+              <img src="img/browser.svg" width="360" height="40" alt="Браузер">
+              <img src="img/sedona.jpg" width="360" height="576" alt="Седона">
+              <div class="catalog-product-list-item-info">
+                <b>Sedona</b>
+                <p>Информационный сайт для туристов</p>
+                <a class="button" href="#">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="catalog-product-list-item">
+              <h3 class="visually-hidden">Пинк</h3>
+              <img src="img/browser.svg" width="360" height="40" alt="Браузер">
+              <img src="img/pink.jpg" width="360" height="576" alt="Пинк">
+              <div class="catalog-product-list-item-info">
+                <b>Pink App</b>
+                <p>Продуктовый лендинг приложения для IOS и Android</p>
+                <a class="button" href="#">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="catalog-product-list-item">
+              <h3 class="visually-hidden">Барбершоп «Бородинский»</h3>
+              <img src="img/browser.svg" width="360" height="40" alt="Браузер">
+              <img src="img/borodinski.jpg" width="360" height="576" alt="Барбершоп «Бородинский»">
+              <div class="catalog-product-list-item-info">
+                <b>Barbershop</b>
+                <p>Сайт салона красоты для мужчин, да.</p>
+                <a class="button" href="#">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="catalog-product-list-item">
+              <h3 class="visually-hidden">Мишка</h3>
+              <img src="img/browser.svg" width="360" height="40" alt="Браузер">
+              <img src="img/mishka.jpg" width="360" height="576" alt="Мишка">
+              <div class="catalog-product-list-item-info">
+                <b>Mishka</b>
+                <p>Интернет-магазин вязанных игрушек</p>
+                <a class="button" href="#">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="catalog-product-list-item">
+              <h3 class="visually-hidden">А плюс</h3>
+              <img src="img/browser.svg" width="360" height="40" alt="Браузер">
+              <img src="img/aplus.jpg" width="360" height="576" alt="А плюс">
+              <div class="catalog-product-list-item-info">
+                <b>A Plus</b>
+                <p>Лендинг курсов повышения квалификации</p>
+                <a class="button" href="#">9 900 руб.</a>
+              </div>
+            </li>
+            <li class="catalog-product-list-item">
+              <h3 class="visually-hidden">Кваст</h3>
+              <img src="img/browser.svg" width="360" height="40" alt="Браузер">
+              <img src="img/kvast.jpg" width="360" height="576" alt="Кваст">
+              <div class="catalog-product-list-item-info">
+                <b>Кваст</b>
+                <p>Промо-сайт производителя крафтового кваса</p>
+                <a class="button" href="#">9 900 руб.</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog-navigation">
+          <button class="catalog-navigation-button button-selected">1</button>
+          <button class="catalog-navigation-button">2</button>
+          <button class="catalog-navigation-button">3</button>
+          <button class="catalog-navigation-button">Следующая</button>
+        </div>
+
+      </section>
+    </main>
+
+
+    <footer class="main-footer">
+
+      <section class="footer-map">
+        <section class="footer-contacts">
+          <h2>Nёrds design studio</h2>
+          <p>
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8
+          </p>
+          <p>
+            тел. +7(812)275-75-75
+          </p>
+          <a class="button contacts-button" href="#">Напишите нам</a>
+        </section>
+
+      </section>
+
+      <section class="footer-social">
+        <ul class="footer-social-list">
+          <li class="footer-social-list-item" style="background-color:lightgray">
+            <a href="#">
+              <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
+            </a>
+          </li>
+          <li class="footer-social-list-item" style="background-color:lightgray">
+            <a href="#">
+              <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
+            </a>
+          </li>
+          <li class="footer-social-list-item" style="background-color:lightgray">
+            <a href="#">
+              <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">
+            </a>
+          </li>
+        </ul>
+        <b>Давайте жить дружно, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </footer>
+
+
+    <section class="modal modal-contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <b>Напишите нам</b>
+      <form class="modal-contacts-form" method="post">
+        <div class="modal-contacts-form-info">
+          <div>
+            <label for="input-area-name" >Ваше Имя</label>
+            <input class="input-area-name" id="input-area-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+          </div>
+          <div>
+            <label for="input-area-mail">Ваше Имя</label>
+            <input class="input-area-mail" id="input-area-mail" type="text" name="mail" placeholder="Для отправки ответа">
+          </div>
+        </div>
+        <div class="modal-contacts-form-letter">
+          <label for="input-area-letter">Текст письма:</label>
+          <input class="input-area-letter" id="input-area-letter" type="text" name="letter" placeholder="В свободной форме">
+        </div>
+      </form>
+      <button class="button" type="submit">Отправить</button>
+    </section>
+
+
+  </body>
+</html>

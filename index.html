@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
 
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-navigation-header-logo">
+        <a class="main-navigation-header-logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Дизайн-студии «Nerds»">
         </a>
         <ul class="site-navigation">
@@ -35,23 +37,31 @@
             для вашего сайта или мобильного приложения.
           </p>
           <a class="button button-more" href="#">Узнать больше</a>
-      </div>
-      <div class="main-info-item">
-        <b>Любим математику, как никто другой</b>
-        <p>
-          Никакого креатива, только математические формулы
-          для расчета идеальных пропорций.
-        </p>
-        <a class="button button-more" href="#">Узнать больше</a>
-    </div>
-    <div class="main-info-item">
-      <b>Только ночь, только хардкор</b>
-      <p>
-        Работать днем, как все? Мы против этого.
-        Ближе к полуночи работа только начинается.
-      </p>
-      <a class="button button-more" href="#">Узнать больше</a>
-  </div>
+        </div>
+        <div class="main-info-item">
+          <b>Любим математику, как никто другой</b>
+          <p>
+            Никакого креатива, только математические формулы
+            для расчета идеальных пропорций.
+          </p>
+          <a class="button button-more" href="#">Узнать больше</a>
+        </div>
+        <div class="main-info-item">
+          <b>Только ночь, только хардкор</b>
+          <p>
+            Работать днем, как все? Мы против этого.
+            Ближе к полуночи работа только начинается.
+          </p>
+          <a class="button button-more" href="#">Узнать больше</a>
+        </div>
+        <form class="form-slider" method="post">
+          <label class="slide" for="slide-one">1 слайд</label>
+          <input type="radio" name="slider" id="slide-one">
+          <label class="slide" for="slide-two">2 слайд</label>
+          <input type="radio" name="slider" id="slide-two">
+          <label class="slide" for="slide-three">3 слайд</label>
+          <input type="radio" name="slider" id="slide-three">
+        </form>
       </section>
 
       <section class="services">
@@ -62,7 +72,7 @@
               <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
               <h3>Веб-сайты</h3>
               <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-              <a class="button sites-button" href="catalog.html">Заказать</a>
+              <a class="sites-button button" href="catalog.html">Заказать</a>
             </div>
           </li>
           <li class="services-menu-item">
@@ -70,7 +80,7 @@
               <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
               <h3>Приложения</h3>
               <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-              <a class="button sites-button" href="catalog.html">Заказать</a>
+              <a class="app-button button" href="catalog.html">Заказать</a>
             </div>
           </li>
           <li class="services-menu-item">
@@ -78,7 +88,7 @@
               <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
               <h3>Презентации</h3>
               <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-              <a class="button sites-button" href="catalog.html">Заказать</a>
+              <a class="presentation-button button" href="catalog.html">Заказать</a>
             </div>
           </li>
         </ul>
@@ -92,22 +102,22 @@
             Исповедуем принципы минимализма и чистоты. Ставим математический расчет
             превыше креатива. Работаем не покладая рук, как роботы.
           </p>
-          <b class="about-us-features-caption">Выполняем заказы на разработку:</b>
-          <ul class="about-us-features-text1">
-            <li class="about-us-features-text1-item">Веб-сайтов любой сложности</li>
-            <li class="about-us-features-text1-item">Мобильных приложений для IOS и Android</li>
-            <li class="about-us-features-text1-item">Слайдшоу и видео для корпоративных презентаций</li>
+          <b class="about-us-features-caption-one">Выполняем заказы на разработку:</b>
+          <ul class="about-us-features-text">
+            <li class="about-us-features-text-item">Веб-сайтов любой сложности</li>
+            <li class="about-us-features-text-item">Мобильных приложений для IOS и Android</li>
+            <li class="about-us-features-text-item">Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
 
         <div class="about-us-features">
           <img src="img/color-logo.png" width="360" height="208" alt="О нас">
-          <b class="about-us-features-caption2">С 2004 года любим точность во всем:</b>
+          <b class="about-us-features-caption-two">С 2004 года любим точность во всем:</b>
           <table class="about-us-features-table">
             <th class="about-us-features-table-row">
-              <td class="about-us-features-table-item">146<span class="percents">%</span></td>
-              <td class="about-us-features-table-item">100<span class="percents">%</span></td>
-              <td class="about-us-features-table-item">50<span class="percents">%</span></td>
+              <td class="about-us-features-table-item"><b>146<sup class="percents">%</sup></b></td>
+              <td class="about-us-features-table-item"><b>100<sup class="percents">%</sup></b></td>
+              <td class="about-us-features-table-item"><b>50<sup class="percents">%</sup></b></td>
             </th>
             <th class="about-us-features-table-row">
               <td class="about-us-features-table-item">Уровень самоотдачи</td>
@@ -140,6 +150,7 @@
     <footer class="main-footer">
 
       <section class="footer-map">
+        <map
         <section class="footer-contacts">
           <h2>Nёrds design studio</h2>
           <p>
@@ -156,17 +167,17 @@
 
       <section class="footer-social">
         <ul class="footer-social-list">
-          <li class="footer-social-list-item" style="background-color:lightgray">
+          <li class="footer-social-list-item">
             <a href="#">
               <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
             </a>
           </li>
-          <li class="footer-social-list-item" style="background-color:lightgray">
+          <li class="footer-social-list-item">
             <a href="#">
               <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
             </a>
           </li>
-          <li class="footer-social-list-item" style="background-color:lightgray">
+          <li class="footer-social-list-item">
             <a href="#">
               <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">
             </a>
@@ -184,17 +195,17 @@
       <form class="modal-contacts-form" method="post">
         <div class="modal-contacts-form-info">
           <div>
-            <label for="input-area-name" >Ваше Имя</label>
+            <label for="input-area-name" >Ваше имя:</label>
             <input class="input-area-name" id="input-area-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
           </div>
           <div>
-            <label for="input-area-mail">Ваше Имя</label>
+            <label for="input-area-mail">Ваш e-mail:</label>
             <input class="input-area-mail" id="input-area-mail" type="text" name="mail" placeholder="Для отправки ответа">
           </div>
         </div>
         <div class="modal-contacts-form-letter">
           <label for="input-area-letter">Текст письма:</label>
-          <input class="input-area-letter" id="input-area-letter" type="text" name="letter" placeholder="В свободной форме">
+          <textarea class="input-area-letter" id="input-area-letter" rows="4" type="text" name="letter" placeholder="В свободной форме"></textarea>
         </div>
       </form>
       <button class="button" type="submit">Отправить</button>
