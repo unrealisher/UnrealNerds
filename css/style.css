@@ -5,6 +5,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  width: 100%;
 }
 
 a {
@@ -28,7 +29,8 @@ a {
 
 .container {
   margin:0 auto;
-  width: 1160px;
+  max-width: 1160px;
+  width: 100%;
 }
 
 .our-projects-item-link {
@@ -116,7 +118,7 @@ a {
   padding-top: 20px;
   background-color: #eeeeee;
   margin-bottom: 80px;
-  min-width: 1160px;
+  width: 100%;
 }
 
 .main-info-slide-one,
@@ -124,9 +126,11 @@ a {
 .main-info-slide-three {
   display: none;
   width: 100%;
+  min-height: 411px;
 }
 
 .main-info {
+  position: relative;
   display: flex;
   min-height: 411px;
 }
@@ -174,18 +178,18 @@ a {
 }
 
 .slide-one {
-  top: 431px;
-  left: 1014px;
+  top: 297px;
+  left: 537px;
 }
 
 .slide-two {
-  top: 431px;
-  left: 1049px;
+  top: 297px;
+  left: 572px;
 }
 
 .slide-three {
-  top: 431px;
-  left: 1084px;
+  top: 297px;
+  left: 607px;
 }
 
 .slide-radio-one:checked + .slide-one::before,
@@ -252,10 +256,6 @@ a {
 
 .services-menu-text {
   margin-bottom: 34px;
-}
-
-.services-menu-item:last-child {
-  margin-right: 60px;
 }
 
 .button {
@@ -421,6 +421,7 @@ a {
 .our-projects {
   display: flex;
   align-items: center;
+  justify-content: center;
   min-height: 180px;
   border-top: 2px solid #f4f4f4;
   border-bottom: 2px solid #f4f4f4;
@@ -467,14 +468,20 @@ a {
   opacity: 0.1;
 }
 
+.main-footer {
+  width: 100%;
+}
+
 .footer-map-background {
+  width: 100%;
   background-color: #eeeeee;
 }
 
 .footer-map {
   position: relative;
   min-height: 416px;
-  width: 1440px;
+  max-width: 1440px;
+  width: 100%;
   margin: auto;
 }
 
